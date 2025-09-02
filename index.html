@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>بنُهرة | Bunhara Coffee</title>
+  <meta name="description" content="متجر قهوة وحلويات — اطلب مباشرة عبر إنستجرام bunhara.om">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img class="logo" src="assets/logo.jpg" alt="شعار بنُهرة" />
+      <div class="names">
+        <h1>بنُهرة</h1>
+        <p class="en">BUNHARA COFFEE</p>
+      </div>
+    </div>
+
+    <nav class="top-actions">
+      <a class="cta" target="_blank" rel="noopener" href="https://instagram.com/bunhara.om">اطلب عبر إنستجرام</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>مذاق يُحكى من أول رشفة لآخر لقمة</h2>
+        <p>تصفح القائمة، أضف اختياراتك للملاحظات، واضغط زر الإنستجرام لإرسال طلبك بسرعة.</p>
+        <div class="actions">
+          <a class="primary" href="#menu">استكشف القائمة</a>
+          <a class="ghost" target="_blank" rel="noopener" href="https://instagram.com/bunhara.om">تابعنا</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="controls">
+        <input id="searchInput" type="search" placeholder="ابحث: لاتيه، موهيتو، تيراميسو…">
+        <div class="chips">
+          <button class="chip active" data-cat="all">الكل</button>
+          <button class="chip" data-cat="coffee">قهوة</button>
+          <button class="chip" data-cat="drink">مشروبات باردة</button>
+          <button class="chip" data-cat="dessert">حلويات</button>
+        </div>
+      </div>
+
+      <div id="grid" class="grid">
+        <!-- Cards will be injected by script.js -->
+      </div>
+    </section>
+
+    <section class="note">
+      <h3>ملاحظة الطلب</h3>
+      <textarea id="orderNote" placeholder="مثال: سبانش لاتيه كبير بدون سكر + موهيتو صغير بنكهة ليمون"></textarea>
+      <a id="igBtn" class="primary wide" target="_blank" rel="noopener" href="https://instagram.com/bunhara.om">
+        إرسال عبر إنستجرام
+      </a>
+      <p class="help">سيتم فتح حساب <b>bunhara.om</b> في إنستجرام؛ انسخ طلبك من المربع وأرسله في الرسائل.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> بنُهرة — جميع الحقوق محفوظة.</p>
+      <a class="footer-ig" target="_blank" rel="noopener" href="https://instagram.com/bunhara.om">@bunhara.om</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
